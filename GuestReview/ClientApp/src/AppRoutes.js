@@ -1,19 +1,14 @@
-import { Counter } from "./components/Counter";
-import { FetchData } from "./components/FetchData";
-import { Home } from "./components/Home";
+import { GuestReview } from "./components/postReview/GuestReview.tsx";
+import { GuestReviewsList } from "./components/guestReviewsList/GuestReviewsList.tsx";
 
 const AppRoutes = [
   {
     index: true,
-    element: <Home />
+    element: <GuestReview />
   },
   {
-    path: '/counter',
-    element: <Counter />
-  },
-  {
-    path: '/fetch-data',
-    element: <FetchData />
+    path: '/reviews-list',
+    element: <GuestReviewsList />
   }
 ];
 
