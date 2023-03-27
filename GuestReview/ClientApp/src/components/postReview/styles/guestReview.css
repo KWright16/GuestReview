@@ -1,0 +1,27 @@
+.guestReviewDiv {
+    padding: 2em 0;
+}
+
+#buttonSubmit {
+    float: right;
+}
+
+#ratingsBox {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        text-align: center;
+    }
+
+    .guestReviewDiv {
+        padding: 1.5em 0.25em;
+    }
+
+    #ratingsBox {
+        width:50%
+    }
+}
