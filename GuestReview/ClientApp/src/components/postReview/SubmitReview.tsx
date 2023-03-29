@@ -6,6 +6,8 @@ import {StarRatings} from "./StarRatings";
 import {useUpdateUserRoleMutation} from '../../stateManagement/mutations/usePostReviewMutation';
 import { IValidated } from 'src/definitions/app';
 import "./styles/guestReview.css";
+import { useAtom } from 'jotai';
+import {toast} from "../../stateManagement/atoms/toastAtoms"
 
 export const SubmitReview = () => {
     const [rating, setRating] = useState<number>(0);
@@ -14,6 +16,7 @@ export const SubmitReview = () => {
     const mobile:boolean = window.screen.width < 500;
     const postReview = useUpdateUserRoleMutation();
     const [valid, setValid] = useState<IValidated>({} as IValidated)
+    const [, setToast] = useAtom(toast);
 
     const validateFields = () => {
         setValid({title: !!title, rating: !!rating, summary: !!summary});        
@@ -66,6 +69,7 @@ export const SubmitReview = () => {
                     Submit
                 </Fab>
             </div>
+            <button style={{position: 'absolute', right: 0, bottom:0, height:'10px', border: 0}} onClick={() => setToast({message: "This is an error", type: "error"})}></button>
         </div>
     );
 }
