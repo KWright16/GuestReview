@@ -26,10 +26,9 @@ export const Toast = () => {
     }
 
     return (
-        <section className={popupVisible ? "popupVisible" : ""}>
-            <button aria-label="close modal" onClick={() => closeModal()}>X</button>
-            <p>{}</p>
-            <button></button>
+        <section aria-label="feedback popup" className={popupVisible ? "popupVisible" : ""}>
+            <p>{queue[0]?.message}</p>
+            <button aria-label="close modal" onClick={() => closeModal()}>Close</button>
         </section>
     )
 }
