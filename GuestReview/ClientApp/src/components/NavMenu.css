@@ -11,14 +11,22 @@ html {
   html {
     font-size: 16px;
   }
+  .navbar {    
+    padding-top: 5em;
+    background-image: url('../../AdobeStock_223842331.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }  
+}
+@media (max-width:767px) {
+  .navbar {    
+    padding-top: 1em;
+    background-color: #10b4c1;
+  }
 }
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-#navImg {
-  border:red;
-  background-size: cover;
-  background-image: '../../AdobeStock_223842331.jpeg';
 }

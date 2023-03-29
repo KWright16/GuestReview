@@ -1,10 +1,10 @@
-import { GuestReview } from "./components/postReview/GuestReview.tsx";
-import { GuestReviewsList } from "./components/guestReviewsList/GuestReviewsList.tsx";
+import { SubmitReview } from "./components/postReview/SubmitReview";
+import { GuestReviewsList } from "./components/guestReviewsList/GuestReviewsList";
 
 const AppRoutes = [
   {
     index: true,
-    element: <GuestReview />
+    element: <SubmitReview />
   },
   {
     path: '/reviews-list',
