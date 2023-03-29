@@ -1,10 +1,10 @@
-///////////////////////// import react query and initial setup
 import {post} from '../../utils/apiHelper';
 import {useMutation, useQueryClient} from 'react-query';
+import { IReview } from "src/definitions/app";
+import {useAtom} from "jotai";
 
 const baseUrl = './';// import this
 
-import { IReview } from "src/definitions/app";
 
 const postReviewRoute = `${baseUrl}/GuestReviewData/CreateGuestReview`;
 
@@ -18,6 +18,7 @@ export const useUpdateUserRoleMutation = () => {
         {
             onSuccess: async (data, params) => {
                 await queryClient.invalidateQueries('reviews');
+                console.log(data);
                 // setToast({message: `Role ${data.name} updated`, type: 'success'});
             },
             onError: async (e: string) => {

@@ -1,5 +1,22 @@
 export interface IReview {
-    title: string;
+    title: string|null;
     rating: number;
-    summary: string;
+    summary: string|null;
+}
+
+export interface IMessageTypes {
+    error: "error",
+    warning: "warning",
+    success: "success"
+}
+
+export interface IToast {
+    message: string;
+    type: IMessageTypes
+}
+
+export interface IValidated {
+    title: boolean;
+    rating: boolean;
+    summary: boolean;
 }
