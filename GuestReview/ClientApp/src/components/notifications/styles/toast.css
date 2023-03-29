@@ -1,0 +1,26 @@
+.popup {
+    position:fixed;
+    /* top: 0;
+    left: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closed {    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popupVisible {
+    visibility: visible;
+    opacity: 1;
+}
+ 
+.error {
+    background-color: #6d4343;
+}
+
+.success {
+    background-color: #10b4c1;
+}

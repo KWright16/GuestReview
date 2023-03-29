@@ -8,6 +8,7 @@ import {
   QueryClient,
   QueryClientProvider
 } from 'react-query';
+import {Toast} from "./components/notifications/Toast";
 import './custom.css';
 
 const queryClient = new QueryClient()
@@ -23,6 +24,7 @@ const App = () => {
               return <Route key={index} {...rest} element={element} />;
             })}
           </Routes>
+          <Toast/>
           </ThemeProvider>
         </Layout>
       </QueryClientProvider>
