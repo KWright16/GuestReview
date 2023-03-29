@@ -4,15 +4,15 @@ export interface IReview {
     summary: string|null;
 }
 
-export interface IMessageTypes {
+export interface IToastTypes {
     error: "error",
     warning: "warning",
     success: "success"
 }
 
-export interface IToast {
+interface IToast {
     message: string;
-    type: IMessageTypes
+    type: keyof IToastTypes | null;
 }
 
 export interface IValidated {
