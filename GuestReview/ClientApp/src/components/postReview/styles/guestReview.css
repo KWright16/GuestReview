@@ -12,6 +12,10 @@
     margin: auto;
 }
 
+.invalidRating {
+    border: 1px solid #6d4343 !important;
+}
+
 @media (max-width: 480px) {
     h1 {
         text-align: center;
