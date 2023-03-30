@@ -38,7 +38,7 @@
     visibility: hidden;
 }
 
-.popupVisible {
+.popupOpen {
     visibility: visible;
     opacity: 1;
 }
@@ -64,7 +64,7 @@
         padding: 3rem 6rem;
     }
 
-    .popup-content {        
+    .popup {        
         left: 25%;
         right: 25%;
         height: 50%;

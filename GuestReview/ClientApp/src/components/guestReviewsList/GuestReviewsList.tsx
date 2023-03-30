@@ -3,11 +3,11 @@ import { useGetReviewsQuery } from "src/stateManagement/queries/useReviewQuery";
 import {ReviewCard} from "../core/reviewCard";
 
 export const GuestReviewsList = () => {
-    const {data:reviewsList, isLoading} = useGetReviewsQuery();
+    const {data:reviewsList} = useGetReviewsQuery();
     const positiveReviews = reviewsList?.filter((review) => review.rating > 3);
     ///////////////////////loading spinner
     return <div>
-        {reviewsList?.map((review, i) => 
+        {positiveReviews?.map((review, i) => 
             <ReviewCard
                 key={'review_' + i}
                 title={review.title}

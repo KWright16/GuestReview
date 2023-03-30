@@ -1,6 +1,5 @@
 import React from "react";
-import { Rating, TextField } from "@mui/material";
-import { StarRatings } from "../postReview/StarRatings";
+import { Rating } from "@mui/material";
 
 interface IReviewCardProps {
     title: string|null;
