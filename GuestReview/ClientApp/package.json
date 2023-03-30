@@ -8,6 +8,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "latest",
+    "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.29",
@@ -41,6 +42,8 @@
     "workbox-streams": "^6.5.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "ajv": "^8.11.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.22.0",
