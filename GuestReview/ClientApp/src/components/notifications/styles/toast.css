@@ -1,10 +1,10 @@
 .popup {
     position:fixed;
     top: 30vh;
-    left: 25%;
-    right: 25%;
+    left: 15%;
+    right: 15%;
     height: 40%;
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,16 +17,9 @@
     display: flex;
     border-radius: 10px;
     position: relative;
-    padding: 3rem 6rem;
+    padding: 2rem 4rem;
     box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
 }
-/* 
-.modal-container {
-    border-radius: 10px;
-    background: #fff;
-    position: relative;
-    padding: 1rem;
-} */
 
 .modal-button {
     position: absolute;
@@ -64,4 +57,17 @@
 
 .success-button {
     background-color: #0c949e;
+}
+
+@media (min-width: 500px) {
+    .popup-content {        
+        padding: 3rem 6rem;
+    }
+
+    .popup-content {        
+        left: 25%;
+        right: 25%;
+        height: 50%;
+        width: 50%;
+    }
 }
